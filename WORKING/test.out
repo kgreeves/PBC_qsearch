@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+<html>
+
+
+<head>
+<noscript>
+<meta http-equiv="refresh" content="1; url=javascriptdisabled.html">
+</noscript>
+</head>
+<body>
+<base href="http://webapps6.doc.state.nc.us/opi/">
+<title>NC DPS Offender Public Information</title>
+<script type="text/javascript" src="scripts/DHTMLmessages.js"></script>
+<!--<script type="text/javascript" src="scripts/contextmenu.js"></script>-->
+<script type="text/javascript">
+<!-- 
+if (screen.width < 1024) {
+	if (document.all) {
+	    document.write('<link rel="stylesheet" type="text/css" href="styles/opi800IE.css">');
+    }
+    else if (document.getElementById) {
+	    document.write('<link rel="stylesheet" type="text/css" href="styles/opi800.css">');
+    }
+}
+else {
+	if (document.all) {
+	    document.write('<link rel="stylesheet" type="text/css" href="styles/opi1024IE.css">');
+    }
+	else if (document.getElementById) {
+	    document.write('<link rel="stylesheet" type="text/css" href="styles/opi1024.css">');
+    }
+}
+
+function showCalendar(dateField) {
+	if (document.all) {
+		window.dateField = dateField;
+		var windowArguments = new Object();
+		windowArguments.dateField = dateField;	
+		var sFeatures = "dialogHeight:330px; dialogWidth:250px; help:off; unadorned:yes; status:no; ";
+		var answer = window.showModalDialog('/opi/calendar.html',windowArguments,sFeatures);
+		if (typeof(answer) != "undefined") {
+			dateField.value = answer;
+	    }
+	}
+	else if (document.getElementById) {
+		returnDate(dateField,null);
+		window.open('/opi/calendar.html','Calendar - Choose a Date','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=0,width=250px,height=330px');
+	}
+}
+
+var mydate;
+
+function returnDate(dateField, newdate) {
+	if (dateField != null) {
+		mydate = dateField;
+	}
+	if (newdate != null && mydate != null) {
+		mydate.value = newdate;
+	}
+}
+
+function displayReport(url) {
+	if (document.all) {
+    	document.all("reportframe").src = "report.html?url=" + url + "?method=runreport";
+    }
+    else if (document.getElementById) {
+    	document.getElementById("reportframe").src = "report.html?url=" + url + "?method=runreport";
+    }
+}
+// -->
+</script>
+<div id="mainpage">
+
+<div id="banner">
+	<div id="centercontent"><center><br>North Carolina Department Of Public Safety<br>Offender Public Information</center></div>
+</div>
+<div id="box">
+	<div id="tabs">
+	  <ul>
+	    <li><a href="offendersearch.do?method=view"><span>Offender Search</span></a></li>
+	    <li><a href="offenderescapesearch.do?method=view"><span>Escapes/Captures</span></a></li>
+	    <li><a href="offenderabscondsearch.do?method=view"><span>Absconders</span></a></li>
+	    <li><a href="offenderreleasesearch.do?method=view"><span>Inmate Releases</span></a></li>
+	    <li><a href="downloads.do?method=view"><span>Downloads</span></a></li>
+	  </ul>
+	</div>
+</div>
+
+<div class="seal">&nbsp;</div>
+
+
+<div class="help"><a href="help.do"><img src="images/find.ico" border="0" alt="Got Questions?"></a></div>
+
+
+<script type="text/javascript" src="scripts/dragiframe.js"></script>
+<div class="titlediv"><center>Offender Search Results</center></div>
+<div class="maindiv"><br>
+    <div class="resultspanel">
+    	<table width="100%" cellspacing="2" cellpadding="5" class="displaytable">
+   	        <tr align="center">
+		        <td align="center">
+					<a href="offendersearch.do?method=review&searchOffenderId=0020991" class="actionbutton">Modify Search</a>
+	                <a href="offendersearch.do?method=view" class="actionbutton">New Search</a>
+		        </td>
+	        </tr>
+    	</table>
+        <table  class="resultstable" width="100%" border="0" cellspacing="1" cellpadding="0">
+<tr><td width="100%" colspan="9"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr class="tableRowAction"><td align="left" valign="bottom" class="tableCellAction">1 offender found.</td>
+<td valign="bottom" align="right" class="tableCellAction">
+<b>1</b></td>
+</tr></table></td></tr>
+<tr class="tableRowHeader"><th valign="bottom" width="5%" align="center" class="tableCellHeader"><a href="pagelistoffendersearchresults.do?method=list&searchOffenderId=0020991&order=asc&sort=0" class="tableCellHeader">Offender Number</th>
+<th valign="bottom" width="10%" align="left" class="tableCellHeader"><a href="pagelistoffendersearchresults.do?method=list&searchOffenderId=0020991&order=asc&sort=1" class="tableCellHeader"><br>Last Name</th>
+<th valign="bottom" width="5%" align="left" class="tableCellHeader"><a href="pagelistoffendersearchresults.do?method=list&searchOffenderId=0020991&order=asc&sort=2" class="tableCellHeader"><br>Name<br>Suffix</th>
+<th valign="bottom" width="10%" align="left" class="tableCellHeader"><a href="pagelistoffendersearchresults.do?method=list&searchOffenderId=0020991&order=asc&sort=3" class="tableCellHeader"><br>First Name</th>
+<th valign="bottom" width="5%" align="left" class="tableCellHeader"><a href="pagelistoffendersearchresults.do?method=list&searchOffenderId=0020991&order=asc&sort=4" class="tableCellHeader">Middle Name</th>
+<th valign="bottom" width="8%" align="left" class="tableCellHeader"><a href="pagelistoffendersearchresults.do?method=list&searchOffenderId=0020991&order=asc&sort=5" class="tableCellHeader"><br>Gender</th>
+<th valign="bottom" width="8%" align="left" class="tableCellHeader"><a href="pagelistoffendersearchresults.do?method=list&searchOffenderId=0020991&order=asc&sort=6" class="tableCellHeader"><br>Race</th>
+<th valign="bottom" width="5%" align="left" class="tableCellHeader"><a href="pagelistoffendersearchresults.do?method=list&searchOffenderId=0020991&order=asc&sort=7" class="tableCellHeader"><br>Birth Date</th>
+<th valign="bottom" width="5%" align="left" class="tableCellHeader"><a href="pagelistoffendersearchresults.do?method=list&searchOffenderId=0020991&order=asc&sort=8" class="tableCellHeader"><br>Age</th>
+</tr>
+<tr class="tableRowOdd">
+<td  class="tablelink" width="5%" align="center" nowrap valign="top"><a class="tablelink" onclick="this.blur(); return true;" href="viewoffender.do?method=view&offenderID=0020991&searchOffenderId=0020991&listurl=pagelistoffendersearchresults&listpage=1">0020991</a></td>
+<td  class="tableCell" width="10%" align="left" nowrap valign="top">BARNHARDT           </td>
+<td  class="tableCell" width="5%" align="left" nowrap valign="top">   </td>
+<td  class="tableCell" width="10%" align="left" nowrap valign="top">TERESA     </td>
+<td  class="tableCell" width="5%" align="left" nowrap valign="top">A              </td>
+<td  class="tableCell" width="8%" align="left" nowrap valign="top">FEMALE</td>
+<td  class="tableCell" width="8%" align="left" nowrap valign="top">WHITE</td>
+<td  class="tableCell" width="5%" align="left" nowrap valign="top">09/24/1960</td>
+<td  class="tableCell" width="5%" align="left" nowrap valign="top">53         </td>
+</tr>
+</table>
+
+    </div>
+</div>
+<div class="bottomdiv">
+<table align="center" cellpadding="0" cellspacing="1">
+	<tr>
+		<td colspan="2">&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" width="24%">
+			<a href="http://www.nc.gov"><img src="images/logo_ncgov_110x37.gif" alt="North Carolina - A better place to be, www.nc.gov" width="112" height="40" border="0"></a></td>
+		<td valign="top" align="left" width="76%">
+			<span style="white-space:nowrap">
+				<a class="footerlink" href="privacy.do">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="footerlink" href="disclaimer.do">Disclaimer</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="footerlink" href="contact.do">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="footerlink" href="help.do">Help Using This Site</a>
+			</span>				
+			<span class="copyright" style="font-weight: bold; font-size: 12px;"><br>&copy 2012 North Carolina Department Of Public Safety. All rights reserved.</span>
+		</td>
+	</tr>
+</table>
+
+
+</div>
+</div>
+
+</body>
+</html>

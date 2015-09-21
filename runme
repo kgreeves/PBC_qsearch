@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python ./PBC_search.py
